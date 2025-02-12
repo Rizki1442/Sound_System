@@ -43,20 +43,19 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar bg-blue-600 p-1">
+  <nav class="navbar p-1">
     <div class="container mx-auto flex justify-between">
       <!-- Logo -->
-      <img src="../static/img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
-      <a class="navbar-brand text-white text-xl font-semibold" href="/">D.soundsystem</a>
+      <img src="../static/img/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full object-cover md:h-12 md:w-12 min-h-[36px] min-w-[36] mr-3">
+      <a class="navbar-brand text-white text-xl font-semibold" href="/">GIRI STORE</a>
       
       <!-- Navbar Links -->
       <div class="hidden lg:flex flex-grow justify-end space-x-4 text-white">
-        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/">Home</a>
-        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/layanan">Layanan</a>
-        <a class="text-warning hover:bg-white px-3 hover:text- py-2 rounded-lg font-bold" href="/lokasi">Lokasi</a>
-        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#informasi">Informasi</a>
-        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#contact">Kontak</a>
+        <a class="text-warning hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/">Home</a>
+        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#layanan">Layanan</a>
+        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/lokasi">Lokasi</a>
+        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/product">Product</a>
+        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/kontak">Kontak</a>
       </div>
   
       <!-- Dropdown for Mobile View -->
@@ -69,11 +68,11 @@
           </svg>
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 text-white font-bold bg-blue-600">
-          <li><a href="/" class="hover:bg-white hover:text-warning">Home</a></li>
-          <li><a href="/layanan" class="hover:bg-white hover:text-warning">Layanan</a></li>
-          <li><a href="/lokasi" class="text-warning hover:bg-white">Lokasi</a></li>
-          <li><a href="/#informasi" class="hover:bg-white hover:text-warning">Informasi</a></li>
-          <li><a href="/#contact" class="hover:bg-white hover:text-warning">Kontak</a>
+          <li><a href="/" class="text-warning hover:bg-white ">Home</a></li>
+          <li><a href="/#layanan" class="hover:bg-white hover:text-warning">Layanan</a></li>
+          <li><a href="/lokasi" class="hover:bg-white hover:text-warning">Lokasi</a></li>
+          <li><a href="/product" class="hover:bg-white hover:text-warning">Product</a></li>
+          <li><a href="/contact" class="hover:bg-white hover:text-warning">Kontak</a>
           </li>
         </ul>
       </div>
@@ -123,6 +122,8 @@
     </div>
   </div>
 
+  
+
   <footer class="footer footer-center bg-base-300 text-base-content p-4">
     <aside>
       <p>Copyright © 2025 D.SOUNDSYSTEM</p>
@@ -161,10 +162,10 @@
   // Menambahkan event listener pada marker untuk menampilkan informasi toko
   tokoMarker.on("click", function () {
     document.getElementById("location-info").innerHTML = `
-        <h3 class="font-bold text-lg" data-aos="fade-left">D.soundsystem</h3>
-        <p class="text-sm text-gray-600" data-aos="fade-left"></p>
-        <p class="text-sm text-gray-600 mt-2" data-aos="fade-left">Alamat: Jl. Kp. Babakan Jengkol, Kp.Serpong, Kec.Kiarapedes, Kab.Purwakarta, Jawa Barat.</p>
-        <p class="text-sm text-gray-600 mt-2" data-aos="fade-left">Jam Operasional: 07.00 - 20.00</p>
+        <h3 class="font-bold text-lg" data-aos="fade-down">D.soundsystem</h3>
+        <p class="text-sm text-gray-600" data-aos="fade-down"></p>
+        <p class="text-sm text-gray-600 mt-2" data-aos="fade-down">Alamat: Jl. Kp. Babakan Jengkol, Kp.Serpong, Kec.Kiarapedes, Kab.Purwakarta, Jawa Barat.</p>
+        <p class="text-sm text-gray-600 mt-2" data-aos="fade-down">Jam Operasional: 07.00 - 20.00</p>
         <a href="https://maps.app.goo.gl/Kjf4VLynJW4yrCbW6" target="_blank" class="btn btn-primary btn-sm mt-4 font-bold" data-aos="fade-up">Kunjungi Toko</a>
       `;
   });
