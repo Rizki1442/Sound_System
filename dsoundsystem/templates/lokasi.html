@@ -43,19 +43,20 @@
 </head>
 
 <body>
-  <nav class="navbar p-1">
+  <!-- Navbar -->
+  <nav class="navbar bg-blue-600 p-1">
     <div class="container mx-auto flex justify-between">
       <!-- Logo -->
-      <img src="../static/img/logo.jpg" alt="Logo" class="h-12 w-12 rounded-full object-cover md:h-12 md:w-12 min-h-[36px] min-w-[36] mr-3">
-      <a class="navbar-brand text-white text-xl font-semibold" href="/">GIRI STORE</a>
+      <img src="../static/img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+      <a class="navbar-brand text-white text-xl font-semibold" href="/">D.soundsystem</a>
       
       <!-- Navbar Links -->
       <div class="hidden lg:flex flex-grow justify-end space-x-4 text-white">
-        <a class="text-warning hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/">Home</a>
-        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#layanan">Layanan</a>
-        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/lokasi">Lokasi</a>
-        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/product">Product</a>
-        <a class="hover:bg-success px-3 hover:text-warning py-2 rounded-lg font-bold" href="/kontak">Kontak</a>
+        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/">Home</a>
+        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/layanan">Layanan</a>
+        <a class="text-warning hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/lokasi">Lokasi</a>
+        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#informasi">Informasi</a>
+        <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#contact">Kontak</a>
       </div>
   
       <!-- Dropdown for Mobile View -->
@@ -68,16 +69,16 @@
           </svg>
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 text-white font-bold bg-blue-600">
-          <li><a href="/" class="text-warning hover:bg-white ">Home</a></li>
-          <li><a href="/#layanan" class="hover:bg-white hover:text-warning">Layanan</a></li>
-          <li><a href="/lokasi" class="hover:bg-white hover:text-warning">Lokasi</a></li>
-          <li><a href="/product" class="hover:bg-white hover:text-warning">Product</a></li>
-          <li><a href="/contact" class="hover:bg-white hover:text-warning">Kontak</a>
+          <li><a href="/" class="hover:bg-white hover:text-warning">Home</a></li>
+          <li><a href="/layanan" class="hover:bg-white hover:text-warning">Layanan</a></li>
+          <li><a href="/lokasi" class="hover:bg-white text-warning">Lokasi</a></li>
+          <li><a href="/#informasi" class="hover:bg-white hover:text-warning">Informasi</a></li>
+          <li><a href="/#contact" class="hover:bg-white hover:text-warning">Kontak</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> 
   
 
   <style>
