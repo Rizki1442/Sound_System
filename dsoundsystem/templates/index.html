@@ -19,11 +19,11 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-  
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" 
-        rel="stylesheet" />
-        
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet" />
+
   <!-- Include Bootstrap JS (this is necessary for dropdown functionality) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -36,7 +36,7 @@
       <!-- Logo -->
       <img src="../static/img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
       <a class="navbar-brand text-white text-xl font-semibold" href="/">D.soundsystem</a>
-      
+
       <!-- Navbar Links -->
       <div class="hidden lg:flex flex-grow justify-end space-x-4 text-white">
         <a class="text-warning hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/">Home</a>
@@ -45,7 +45,7 @@
         <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#informasi">Informasi</a>
         <a class="hover:bg-white px-3 hover:text-warning py-2 rounded-lg font-bold" href="/#contact">Kontak</a>
       </div>
-  
+
       <!-- Dropdown for Mobile View -->
       <div class="dropdown dropdown-end lg:hidden">
         <label tabindex="0" class="btn btn-ghost">
@@ -55,7 +55,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 text-white font-bold bg-blue-600">
+        <ul tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 text-white font-bold bg-blue-600">
           <li><a href="/" class="text-warning hover:bg-white ">Home</a></li>
           <li><a href="/layanan" class="hover:bg-white hover:text-warning">Layanan</a></li>
           <li><a href="/lokasi" class="hover:bg-white hover:text-warning">Lokasi</a></li>
@@ -66,42 +67,50 @@
       </div>
     </div>
   </nav>
-  
+
   <!--hero-->
   <div class="hero min-h-screen" style="background-image: url(../static/img/image.jpg);">
     <div class="hero-overlay bg-opacity-50"></div>
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
         <h1 class="sound font-bold text-4xl text-white">D.SOUNDSYSTEM</h1>
-        <p class="gunung1 mb-5 text-white opacity-80">Menyediakan jasa sewa soundsystem & Lighting dengan harga miring</p>
+        <p class="gunung1 mb-5 text-white opacity-80">Menyediakan jasa sewa soundsystem & Lighting dengan harga miring
+        </p>
         <a href="/layanan"><button class="btn btn-primary">PILIH PAKET</button></a>
       </div>
     </div>
   </div>
 
-   <!-- Kenapa Memilih Kami? -->
-   <section class="max-w-7xl mx-auto py-16" id="whychooseus">
+  <!-- Kenapa Memilih Kami? -->
+  <section class="max-w-7xl mx-auto py-16" id="whychooseus">
     <h3 class="text-3xl font-semibold text-center text-gray-800">Kenapa Harus Order dikami?</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
       <!-- Card 1 - Mekanik Berpengalaman -->
       <div class="bg-white p-6 rounded-lg shadow-lg text-center transition transform hover:scale-105 hover:shadow-2xl">
-        <img src="https://paketsoundsystem.com/wp-content/uploads/2012/08/Sound-System.png" alt="Mekanik Berpengalaman" class="mx-auto mb-4 w-auto h-16" />
+        <img src="https://paketsoundsystem.com/wp-content/uploads/2012/08/Sound-System.png" alt="Mekanik Berpengalaman"
+          class="mx-auto mb-4 w-auto h-16" />
         <h4 class="text-xl font-semibold text-gray-700">Sound yang nyaman didengar</h4>
-        <p class="mt-4 text-gray-600">Kami memiliki sound yang berkualitas, sehingga menghasilkan suara yang jernih dan bass menggelegar.</p>
+        <p class="mt-4 text-gray-600">Kami memiliki sound yang berkualitas, sehingga menghasilkan suara yang jernih dan
+          bass menggelegar.</p>
       </div>
 
       <!-- Card 2 - Fasilitas Lengkap -->
       <div class="bg-white p-6 rounded-lg shadow-lg text-center transition transform hover:scale-105 hover:shadow-2xl">
-        <img src="https://www.ukdj.co.uk/images/elumen8-kudos-2re-moving-head-beam-discharge-lighting-effect-p4789-48080_image.jpg" alt="Fasilitas Lengkap" class="mx-auto mb-4 w-auto h-16" />
+        <img
+          src="https://www.ukdj.co.uk/images/elumen8-kudos-2re-moving-head-beam-discharge-lighting-effect-p4789-48080_image.jpg"
+          alt="Fasilitas Lengkap" class="mx-auto mb-4 w-auto h-16" />
         <h4 class="text-xl font-semibold text-gray-700">Panggung keren butuh lighting profesional</h4>
-        <p class="mt-4 text-gray-600">Jangan biarkan event mu biasa-biasa saja, sewa Moving Head Beam untuk efek cahaya luar biasa.</p>
+        <p class="mt-4 text-gray-600">Jangan biarkan event mu biasa-biasa saja, sewa Moving Head Beam untuk efek cahaya
+          luar biasa.</p>
       </div>
 
       <!-- Card 3 - Harga Terjangkau -->
       <div class="bg-white p-6 rounded-lg shadow-lg text-center transition transform hover:scale-105 hover:shadow-2xl">
-        <img src="https://kantorpenerjemahtersumpah.com/wp-content/uploads/2018/12/Tarif-Jasa-Penerjemah-Resmi.png" alt="Harga Terjangkau" class="mx-auto mb-4 w-auto h-16" />
+        <img src="https://kantorpenerjemahtersumpah.com/wp-content/uploads/2018/12/Tarif-Jasa-Penerjemah-Resmi.png"
+          alt="Harga Terjangkau" class="mx-auto mb-4 w-auto h-16" />
         <h4 class="text-xl font-semibold text-gray-700">Harga Terjangkau</h4>
-        <p class="mt-4 text-gray-600">Kami menawarkan layanan berkualitas tinggi dengan harga yang bersaing dan terjangkau bagi semua kalangan.</p>
+        <p class="mt-4 text-gray-600">Kami menawarkan layanan berkualitas tinggi dengan harga yang bersaing dan
+          terjangkau bagi semua kalangan.</p>
       </div>
     </div>
   </section>
@@ -113,11 +122,14 @@
       <div class="text-center md:text-left">
         <h3 class="text-3xl font-semibold text-gray-800">Tentang Kami</h3>
         <p class="mt-4 text-lg text-gray-600">
-          Selamat datang di D.SOUNDSYSTEM penyedia jasa sewa sound system profesional untuk berbagai acara.Seperti pernikahan dan resepsi, event musik, acara pesta, dan banyak lainnya. Kami berkomitmen memberikan kualitas suara terbaik dengan peralatan modern dan teknisi berpengalaman.
+          Selamat datang di D.SOUNDSYSTEM penyedia jasa sewa sound system profesional untuk berbagai acara.Seperti
+          pernikahan dan resepsi, event musik, acara pesta, dan banyak lainnya. Kami berkomitmen memberikan kualitas
+          suara terbaik dengan peralatan modern dan teknisi berpengalaman.
           Kepuasan pelanggan adalah prioritas kami, tunggu apalagi order sekarang juga!.
         </p>
         <div class="text-center mt-10">
-          <a href="/" class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105">
+          <a href="/"
+            class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105">
             Kembali ke Beranda
           </a>
         </div>
@@ -125,46 +137,51 @@
 
       <!-- Gambar Mobil di Kanan -->
       <div class="text-center">
-        <img src="https://pngimg.com/d/audio_speakers_PNG11130.png" alt="Mobil" class="w-full h-auto max-w-md mx-auto" />
+        <img src="https://pngimg.com/d/audio_speakers_PNG11130.png" alt="Mobil"
+          class="w-full h-auto max-w-md mx-auto" />
       </div>
     </div>
   </section>
 
-<!-- Container Informasi Kontak -->
-<div class="container mx-auto flex justify-center items-center min-h-screen" id="contact">
-  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
-    <h2 class="text-2xl font-semibold text-center mb-6">Kontak Kami</h2>
+  <!-- Container Informasi Kontak -->
+  <div class="container mx-auto flex justify-center items-center min-h-screen" id="contact">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+      <h2 class="text-2xl font-semibold text-center mb-6">Kontak Kami</h2>
 
-    <!-- Informasi Kontak -->
-    <div class="mb-4">
-      <label class="block text-gray-700">Nomor WhatsApp</label>
-      <a href="https://wa.me/1234567890" class="w-full p-3 text-blue-600 hover:underline">+62 831 9579 6437</a><div class="text-center mt-4">
-        <a href="https://wa.me/message/YGK5XE4S2EJCC1" target="_blank" class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105">
-          Pesan Sekarang
+      <!-- Informasi Kontak -->
+      <div class="mb-4">
+        <label class="block text-gray-700">Nomor WhatsApp</label>
+        <a href="https://wa.me/1234567890" class="w-full p-3 text-blue-600 hover:underline">+62 831 9579 6437</a>
+        <div class="text-center mt-4">
+          <a href="https://wa.me/message/YGK5XE4S2EJCC1" target="_blank"
+            class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Email</label>
+        <a href="mailto:info@example.com" class="w-full p-3 text-blue-600 hover:underline">xyznurdin9@gmail.com</a>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Alamat</label>
+        <p class="w-full p-3 text-black">Jl. Kp. Babakan Jengkol, Kp.Serpong, Kec.Kiarapedes, Kab.Purwakarta, Jawa Barat
+        </p>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">Jam Operasional</label>
+        <p class="w-full p-3 text-black">Buka setiap hari dari jam 07.00 - 20.00</p>
+      </div>
+
+      <!-- Tombol Kembali -->
+      <div class="text-center mt-4">
+        <a href="/"
+          class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105">
+          Kembali ke Beranda
         </a>
       </div>
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700">Email</label>
-      <a href="mailto:info@example.com" class="w-full p-3 text-blue-600 hover:underline">xyznurdin9@gmail.com</a>
-    </div>
-    <div class="mb-4">
-      <label class="block text-gray-700">Alamat</label>
-      <p class="w-full p-3 text-black">Jl. Kp. Babakan Jengkol, Kp.Serpong, Kec.Kiarapedes, Kab.Purwakarta, Jawa Barat</p>
-    </div>
-    <div class="mb-4">
-      <label class="block text-gray-700">Jam Operasional</label>
-      <p class="w-full p-3 text-black">Buka setiap hari dari jam 07.00 - 20.00</p>
-    </div>
-
-    <!-- Tombol Kembali -->
-    <div class="text-center mt-4">
-      <a href="/" class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105">
-        Kembali ke Beranda
-      </a>
-    </div>
   </div>
-</div>
 
 
   <!-- Modal Notifikasi -->
@@ -172,9 +189,120 @@
     <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm text-center">
       <h3 class="text-lg font-semibold mb-2">Pesan Terkirim!</h3>
       <p class="text-gray-600">Terima kasih! Kami akan segera menghubungi Anda.</p>
-      <button onclick="closeModal()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Tutup</button>
+      <button onclick="closeModal()"
+        class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Tutup</button>
     </div>
   </div>
+  <style>
+    /* Styling untuk gambar ERD */
+    .erd-img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  </style>
+  <div class="container mt-5">
+    <!-- Judul Halaman -->
+    <div class="text-center">
+      <h1>Entity Relationship Diagram (ERD)</h1>
+      <p>Penjelasan tentang hubungan antar entitas.</p>
+    </div>
+
+    <!-- Menampilkan Gambar ERD -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="section-title">Entity Relationship Diagram (ERD)</h5>
+            <p>Berikut adalah diagram hubungan antar entitas:</p>
+            <img src="../static/img/erd.jpg" alt="erd.jpg" class="erd.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Penjelasan ERD -->
+    <div class="row mt-4 justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="section-title">Penjelasan ERD</h5>
+            <p>Berikut adalah ERD (Entity Relationship Diagram) dan 5W 1H dalam bahasa Indonesia untuk website D.Sound System ERD (Diagram Hubungan entitas):</p>
+
+            <h6>Entitas 1: <strong>User (pengguna)</strong></h6>
+            <p>- Atribut: ID, Nama, Informasi Kontak, Rincian Acara - Hubungan: Seorang pengguna bisa membuat banyak pesanan untuk soundsystem dan pencahayaan.
+               <strong></strong>.</p>
+
+            <h6>Entitas 2: <strong>order (pesanan)</strong></h6>
+            <p>- Atribut: ID Pesanan, ID Pengguna, ID Paket, Tanggal Acara
+              - Hubungan: Sebuah pesanan dimiliki oleh pengguna dan berhubungan dengan paket tertentu.<strong>
+</strong>.</p>
+
+<h6>Entitas 3: <strong>package (paket)</strong></h6>
+            <p>- Atribut: ID Paket, Nama Paket, Harga, Deskripsi
+              - Hubungan: Sebuah paket bisa dimasukkan dalam banyak pesanan..<strong>
+</strong>.</p>
+
+<h6>Entitas 4: <strong>contack (kontak)</strong></h6>
+            <p>Atribut: ID Kontak, Nama, Email, Nomor Telepon
+              - Hubungan: Seorang pengguna dapat menghubungi layanan dukungan. .<strong>
+</strong>.</p>
+<h6>Entitas 5: <strong>payment (pembayaran)</strong></h6>
+            <p>- Atribut:ID Pembayaran, ID Pesanan, Status Pembayaran, Metode Pembayaran
+              - Hubungan: Sebuah pesanan memiliki satu pembayaran.<strong>
+</strong>.</p>
+</strong>.</p>
+<h6> 5W 1H: <strong>what (apa)</strong></h6>
+            <p>- Website ini menawarkan layanan penyewaan sound system dan pencahayaan untuk berbagai acara, dengan berbagai pilihan paket sesuai kebutuhan.<strong>
+</strong>.</p>
+</strong>.</p>
+<h6>  <strong>who(siapa)</strong></h6>
+            <p>-Pengguna yang membutuhkan penyewaan sound systems dan pencahayaan untuk acara mereka. Termasuk penyelenggara acara, perusahaan, atau individu yang mengadakan event..<strong>
+</strong>.</p>
+</strong>.</p>
+<h6>  <strong>where (dimana)</strong></h6>
+            <p>layanan ini tersedia melalui website yang dapat diakses secara online. Penyewaan dilakukan secara lokal tergantung lokasi pengguna dan perusahaan penyedia layanan.<strong>
+</strong>.</p>
+</strong>.</p>
+<h6>  <strong>when (kapan)</strong></h6>
+            <p>layanan ini dapat diakses kapan saja melalui website untuk memilih paket, melakukan pemesanan, dan melakukan pembayaran sesuai jadwal acara pengguna.<strong>
+</strong>.</p>
+</strong>.</p>
+<h6><strong>why (mengapa)</strong></h6>
+            <p>website ini menawarkan solusi praktis dan efisien bagi mereka yang membutuhkan penyewaan sound system  dan pencahayaan berkualitas dengan harga yang bersaing untuk acara mereka.<strong>
+</strong>.</p>
+</strong>.</p>
+</strong>.</p>
+<h6><strong>how (bagaimana)</strong></h6>
+            <p>Pengguna dapat mengakses website, memilih paket yang sesuai, mengisi rincian acara, melakukan pembayaran, dan menerima layanan yang disediakan pada hari acara.<strong>
+</strong>.</p>
+
+            <h6>BAHASA PEMROGRAMANA YANG DIGUNAKAN :</h6>
+            <ul>
+              <li><strong>HTML (HYPER TEXT MARKUP LEANGUANGE)</strong>
+                Digunakan untuk struktur dan tampilan halaman web</li>
+
+                <li><strong>CSS (Cascading Style Shet)</strong>
+                  Digunakan untuk mengatur desain dan tata letak halaman web,seperti warna,font,dan ukuran elemen</li>
+
+                  <li><strong>JavaScript</strong>
+                    Digunakan untuk menambah interaksi dan fungsionalitas dinamis di halaman web desain dan tata letak halaman web.</li>
+
+                    <li><strong>Flask</strong>
+                   Framework web yang ringan dan fleksibel untuk Python.ini memungkinkan kamu untuk membangun aplikasi web dengan mudah dan cepat,dan sangat populer untuk membangun aplikasi web yang sederhana hingga menengah.Flask memberikan kontrol penuh atas struktur aplikasi dan memudahkan integrasi dengan berbagai pustaka eksternal </li>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <footer class="footer footer-center bg-base-300 text-base-content p-4">
     <aside>
